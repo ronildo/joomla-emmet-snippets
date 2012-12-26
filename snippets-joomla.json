@@ -1,0 +1,75 @@
+{
+	"html" : {
+		"snippets" : {
+			//Templates
+			"jdoc:m": "<jdoc:include type=\"modules\" name=\"${1}\" style=\"${2:xhtml}\" />",
+			"jdoc:c": "<jdoc:include type=\"component\" />",
+			"jdoc:h": "<jdoc:include type=\"head\" />",
+			"jdoc:me": "<jdoc:include type=\"message\" />",
+
+			//JForms
+			"jFormCalendar": "<field name=\"${1:mydate}\" type=\"calendar\" default=\"${2:5-10-2008}\" label=\"${3:Select a date}\" description=\"${4}\" format=\"${5:%d-%m-%Y}\" />",
+			"jFormCategory": "<field name=\"${1:mycategory}\" type=\"category\" extension=\"${2:com_content}\" label=\"${3:Select a date}\" description=\"${4}\" />",
+			"jFormCheckbox": "<field name=\"${1:show_title}\" type=\"checkbox\" label=\"${2:Show title}\" description=\"${3:Show the title of the item}\" value=\"${4:1}\" />",
+			"jFormComponentlayout": "<field name=\"${1:mylayout}\" type=\"componentlayout\" extension=\"${2:com_content}\" view=\"${3:article}\" label=\"${4:JFIELD_ALT_LAYOUT}\" useglobal=\"true\" description=\"${4:JFIELD_ALT_COMPONENT_LAYOUT}\" />",
+			"jFormEditor": "<field name=\"${1:test1}\" type=\"editor\" label=\"${2:Test Field}\" width=\"${3:300}\" filter=\"${3:safehtml}\" />",
+			"jFormEditors": "<field name=\"${1:myeditor}\" type=\"editors\" default=\"none\" label=\"${2:Select an editor}\" />",
+			"jFormFile": "<field name=\"${1:myfilevalue}\" type=\"file\" label=\"${2:Enter some text}\" description=\"${3:Choose an image from your computer with maximum 100KB}\" size=\"${4:10}\" accept=\"${4:image/*}\" />",
+			"jFormFilelist": "<field name=\"${1:myfile}\" type=\"filelist\" default=\"${3}\" label=\"${4:Select a file}\" description=\"${5}\" directory=\"${5:administrator}\" filter=\"${6}\" exclude=\"${7}\" stripext=\"${8}\" />",
+			"jFormFolder": "<field name=\"${1:myfolder}\" type=\"folderlist\" default=\"${2}\" label=\"${3:Select a folder}\" directory=\"${4:administrator}\" filter=\"${5}\" exclude=\"${6}\" stripext=\"${7}\" />",
+			"jFormGroupedlist": "<field name=\"${1:mylistvalue}\" type=\"groupedlist\" default=\"${2}\" label=\"${3:Select an option}\" description=\"${4}\">\n\t<group label=\"Group 1\">\n\t\t<option value=\"0\">Option 1</option>\n\t\t<option value=\"1\">Option 2</option>\n\t</group>\n\t<option value=\"2\">Option 3</option>\n\t<option value=\"3\">Option 4</option>\n</field>",
+			"jFormHelp": "<field name=\"${1:myhelpsite}\" type=\"helpsite\" default=\"${2}\" label=\"${3:Select a help site}\" description=\"${4}\" />",
+			"jFormHidden": "<field name=\"${1:mysecretvariable}\" type=\"hidden\" default=\"${2}\" />",
+			"jFormImagelist": "<field name=\"${1:myimage}\" type=\"imagelist\" default=\"${2}\" label=\"${3:Select an image}\" description=\"${4}\" directory=\"${5}\" exclude=\"${6}\" stripext=\"${7}\" />",
+			"jFormInteger": "<field name=\"${1:myintegeralue}\" type=\"integer\" default=\"${2:Some integer}\" label=\"${3:Choose an integer}\" description=\"${4}\" first=\"${5:1}\" last=\"${5:10}\" step=\"${6:1}\" />",
+			"jFormLanguage": "<field name=\"${1:mylanguage}\" type=\"language\" client=\"${2:site}\" default=\"${3:en-GB}\" label=\"${4:Select a language}\" description=\"${5}\" />",
+			"jFormList": "<field name=\"${1:mylistvalue}\" type=\"list\" default=\"${2}\" label=\"${3:Select an option}\" description=\"${4}\">\n\t<option value=\"0\">Option 1</option>\n\t<option value=\"1\">Option 2</option>\n</field>",
+			"jFormMedia": "<field name=\"${1:myimage}\" type=\"media\" directory=\"${2:stories}\" />",
+			"jFormMenu": "<field name=\"${1:mymenu}\" type=\"menu\" default=\"${2:mainmenu}\" label=\"${3:Select a menu}\" description=\"${4:Select a menu}\" />",
+			"jFormMenuitem": "<field name=\"${1:mymenuitem}\" type=\"menuitem\" default=\"${2:45}\" label=\"${3:Select a menu item}\" description=\"${4:Select a menu item}\" />",
+			"jFormModulelayout": "<field name=\"${1:mymodulelayout}\" type=\"modulelayout\" label=\"${2:JFIELD_ALT_LAYOUT_LABEL}\" description=\"${3:JFIELD_ALT_MODULE_LAYOUT_DESC}\" />",
+			"jFormPassword": "<field name=\"${1:mypassword}\" type=\"password\" default=\"${2:secret}\" label=\"${3:Enter a password}\" description=\"${4}\" size=\"${5:5}\" />",
+			"jFormRadio": "<field name=\"${1:myradiovalue}\" type=\"radio\" default=\"${2:0}\" label=\"${3:Select an option}\" description=\"${4}\">\n\t<option value=\"0\">1</option>\n\t<option value=\"1\">2</option>\n</field>",
+			"jFormSpacer": "<field type=\"spacer\" name=\"${1:myspacer}\" label=\"${2:Advanced parameters}\" />",
+			"jFormSql": "<field name=\"${1:title}\" type=\"sql\" default=\"${2:10}\" label=\"${3:Select an article}\" query=\"${4:SELECT id AS value, title FROM #__content}\" />",
+			"jFormText": "<field name=\"${1:myhtmlvalue}\" type=\"text\" default=\"${2}\" label=\"${3:Enter some text}\" description=\"${4:Enter some description}\" filter=\"${5:raw}\" />",
+			"jFormTextarea": "<field name=\"${1:mytextarea}\" type=\"textarea\" default=\"${2:default}\" label=\"${3:Enter some html}\" description=\"${4}\" rows=\"${5:10}\" cols=\"${6:5}\" filter=\"${7:raw}\"/>",
+			"jFormTimezone": "<field name=\"${1:mytimezone}\" type=\"timezone\" default=\"${2:-10}\" label=\"${3:Select a timezone}\" description=\"${4}\" />"
+		},
+		"abbreviations": {
+			"jm": "jdoc:m",
+			"jc": "jdoc:c",
+			"jh": "jdoc:h",
+			"jme": "jdoc:me",
+
+			// JForms
+			"jfc": "jFormCalendar",
+			"jfca": "jFormCategory",
+			"jfch": "jFormCheckbox",
+			"jfcl": "jFormComponentlayout",
+			"jfe": "jFormEditor",
+			"jfes": "jFormEditors",
+			"jff": "jFormFile",
+			"jffl": "jFormFilelist",
+			"jffo": "jFormFolder",
+			"jfg": "jFormGroupedlist",
+			"jfh": "jFormHelp",
+			"jfhi": "jFormHidden",
+			"jfi": "jFormImagelist",
+			"jfin": "jFormInteger",
+			"jfl": "jFormLanguage",
+			"jfli": "jFormList",
+			"jfm": "jFormMedia",
+			"jfme": "jFormMenu",
+			"jfmi": "jFormMenuitem",
+			"jfml": "jFormModulelayout",
+			"jfp": "jFormPassword",
+			"jfr": "jFormRadio",
+			"jfs": "jFormSpacer",
+			"jfsql": "jFormSql",
+			"jft": "jFormText",
+			"jfta": "jFormTextarea",
+			"jftz": "jFormTimezone"
+		}
+	}
+}
