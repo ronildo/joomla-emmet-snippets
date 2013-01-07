@@ -7,7 +7,6 @@
       "jdoc:h": "<jdoc:include type=\"head\" />",
       "jdoc:me": "<jdoc:include type=\"message\" />",
 
-      
       "jFormCalendar": "<field name=\"${1:mydate}\" type=\"calendar\" default=\"${2:5-10-2008}\" label=\"${3:Select a date}\" description=\"${4}\" format=\"${5:%d-%m-%Y}\" />",
       "jFormCategory": "<field name=\"${1:mycategory}\" type=\"category\" extension=\"${2:com_content}\" label=\"${3:Select a date}\" description=\"${4}\" />",
       "jFormCheckbox": "<field name=\"${1:show_title}\" type=\"checkbox\" label=\"${2:Show title}\" description=\"${3:Show the title of the item}\" value=\"${4:1}\" />",
@@ -42,7 +41,6 @@
       "jh": "jdoc:h",
       "jme": "jdoc:me",
 
-      
       "jfc": "jFormCalendar",
       "jfca": "jFormCategory",
       "jfch": "jFormCheckbox",
