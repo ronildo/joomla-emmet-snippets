@@ -11,14 +11,17 @@ body {
 
 /* line 11, ../sass/style.scss */
 #items .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
   list-style: none;
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin: 0 40px 40px 0;
+  padding: 10px;
+  width: 45%;
 }
-/* line 16, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 #items .command {
   color: #777;
   display: block;
   font-size: 14px;
-  padding-left: 10px;
+  padding: 5px 0 0 10px;
 }
